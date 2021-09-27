@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/zenghao1998/gulu-ui/issues"
   },
-  "homepage": "https://github.com/zenghao1998/gulu-ui#readme"
+  "homepage": "https://github.com/zenghao1998/gulu-ui#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
