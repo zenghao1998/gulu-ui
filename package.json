@@ -1,0 +1,19 @@
+{
+  "name": "vuegulu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenghao1998/gulu-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zenghao1998/gulu-ui/issues"
+  },
+  "homepage": "https://github.com/zenghao1998/gulu-ui#readme"
+}
