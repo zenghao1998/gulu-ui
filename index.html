@@ -6,16 +6,13 @@
 </head>
 <body>
 <div id="app">
-    {{ msg }}
+    <g-button-group>
+        <g-button icon-position="left" icon="sousuotubiao">按钮</g-button>
+        <g-button icon-position="left">更多</g-button>
+        <g-button icon-position="right" icon="sousuotubiao">按钮</g-button>
+    </g-button-group>
 </div>
-<script src="./node_modules/vue/dist/vue.min.js"></script>
-<script>
-    new Vue({
-        el:'#app',
-        data:{
-            msg:12
-        },
-    })
-</script>
+<script src="./src/app.js"></script>
+<!--<script src="//at.alicdn.com/t/font_1529752_8klvuc6k4pf.js"></script>-->
 </body>
 </html>

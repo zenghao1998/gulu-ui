@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "./node_modules/.bin/parcel index.html --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,16 @@
   },
   "homepage": "https://github.com/zenghao1998/gulu-ui#readme",
   "dependencies": {
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "@vue/component-compiler-utils": "^3.2.2",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.42.1",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
   }
 }
