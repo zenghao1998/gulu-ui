@@ -10,7 +10,10 @@ new Vue({
 }).$mount("#app")
 
 
-import { expect } from 'chai';
+import chai from 'chai';
+import spies from 'chai-spies'
+chai.use(spies);
+let expect = chai.expect
 //单元测试
 {
     //测试loading是否能加载
@@ -45,10 +48,13 @@ import { expect } from 'chai';
         }
     });
     vm.$mount();
-    vm.$on('click',()=>{
-        console.log(1)
+    //代理一个函数
+    let spy = chai.spy(()=>{
+        expect(1).to.eq(1)
     })
+    vm.$on('click',spy)
     let svg = vm.$el
-    // expect(getComputedStyle(svg).order).to.eq('2')
-    svg.click()
+    svg.click();
+    //断言代理的函数是否正常执行
+    expect(spy).to.have.been.called()
 }

@@ -19,7 +19,7 @@
             icon: {},
             loading: {
                 type: Boolean,
-                default: false
+                default: false,
             },
             iconPosition: {
                 type: String,
