@@ -33,7 +33,7 @@ module.exports = function (config) {
 
         autoWatch: true,
         //告诉karma要打开哪个浏览器 我们这里装的chrome
-        browsers: ['Chrome'],
+        browsers: ['ChromeHeadless'],
 
         singleRun: false,
 
