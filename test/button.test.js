@@ -70,19 +70,19 @@ describe('Button', () => {
         vm.$el.remove()
         vm.$destroy()
     })
-    // it('点击 button 触发 click 事件', () => {
-    //     const Constructor = Vue.extend(Button)
-    //     const vm = new Constructor({
-    //         propsData: {
-    //             icon: 'settings',
-    //         }
-    //     }).$mount()
-    //     //普通函数不可被断言，添加间谍函数，这个函数可断言
-    //     const callback = sinon.fake();
-    //     vm.$on('click', callback)
-    //     vm.$el.click()
-    //     //期待间谍函数有被调用
-    //     expect(callback).to.have.been.called
-    //
-    // })
+    it('点击 button 触发 click 事件', () => {
+        const Constructor = Vue.extend(Button)
+        const vm = new Constructor({
+            propsData: {
+                icon: 'settings',
+            }
+        }).$mount()
+        //普通函数不可被断言，添加间谍函数，这个函数可断言
+        const callback = sinon.fake();
+        vm.$on('click', callback)
+        vm.$el.click()
+        //期待间谍函数有被调用
+        expect(callback).to.have.been.called
+
+    })
 })
